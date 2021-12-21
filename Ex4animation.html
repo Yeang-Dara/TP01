@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animationt</title>
+    <style>
+        .drop1{
+        
+            position: relative;
+            animation:  mymove 4s;
+            animation-fill-mode: forwards;    
+        }
+        .drop2{
+        
+        position: relative;
+        animation:  mymove 4s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;    
+        }
+        .drop3{
+        
+        position: relative;
+        animation:  mymove 4s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;    
+         }
+        @keyframes mymove {
+            from{top:0px;}
+            to{top:300px;}
+        }
+        .wrapper{
+            display: flex;
+            margin-left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <span class="drop1">🥳</span>
+        <span class="drop2">😜</span>
+        <span class="drop3">😍</span>
+    </div>
+</body>
+</html>
